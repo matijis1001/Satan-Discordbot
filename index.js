@@ -49,7 +49,7 @@ app.get("/admin", function(request, response) {
         // response.sendFile()
       }
   }else{
-        response.sendFile(__dirname + "/views/index.html");
+      response.render("index",  { main: 'block',authdiv:'none' })
   }
 
 });
