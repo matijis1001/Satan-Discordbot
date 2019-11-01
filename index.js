@@ -48,6 +48,8 @@ app.get("/admin", function(request, response) {
         response.sendFile(__dirname + "/views/deletecookies.html");
         // response.sendFile()
       }
+  }else{
+        response.sendFile(__dirname + "/views/index.html");
   }
 
 });
@@ -109,7 +111,7 @@ const bot = new Discord.Client();
 
 const ytdl = require("ytdl-core");
 
-const token = 'NjM4MjA2Nzg5NjgyMzMxNjgw.XbaemQ.MHLOwjEj5Z2mFOjYgd7rDB6oC9M';
+const token = 'NjM4MjA2Nzg5NjgyMzMxNjgw.XbvqTg.zW7w6qUqqtTHl4YsL9vEnSMkmh0';
 
 const fs = require("fs");
 bot.steamid = require ("./steamid.json");
